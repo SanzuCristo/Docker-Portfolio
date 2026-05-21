@@ -4,7 +4,7 @@ Proyectos prácticos para aprender Docker Desktop desde cero, orientados a desar
 
 ## Proyectos
 
-### [Proyecto 1 — App Dockerizada](./proyecto-1-Docker)
+### [Proyecto 1 — App Dockerizada](./proyecto-1-docker)
 App de tareas con React + FastAPI + PostgreSQL orquestados con Docker Compose.
 
 **Conceptos:** contenedores, redes internas, volúmenes, variables de entorno, healthchecks.
