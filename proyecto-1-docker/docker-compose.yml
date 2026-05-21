@@ -1,0 +1,31 @@
+services:
+
+  db:
+    image: postgres:15
+    environment:
+       POSTGRES_USER: usuario
+       POSTGRES_PASSWORD: contraseña
+       POSTGRES_DB: tareas_db
+    volumes:
+      - datos_postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://usuario:contraseña@db:5432/tareas_db
+    depends_on:
+      - db
+  
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+volumes:
+  datos_postgres:
