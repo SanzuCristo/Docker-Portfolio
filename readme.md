@@ -20,9 +20,9 @@ La misma app reescrita con imágenes optimizadas. Reducción del 82% en el front
 
 ## Requisitos
 
-- Docker Desktop instalado y corriendo
+- Docker Desktop
 - Git
 
 ## Autor
 
-Tu nombre — [GitHub](https://github.com/SanzuCristo)
+Snowi — [GitHub](https://github.com/SanzuCristo)
